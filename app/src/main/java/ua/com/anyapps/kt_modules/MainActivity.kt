@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun attachBaseContext(base: Context) {
         super.attachBaseContext(base)
-
+        //
         SplitCompat.install(this)
     }
 }
