@@ -6,24 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnStartModule"
+    <TextView
+        android:id="@+id/tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="Button"
+        android:text="value"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnFluidSlider"
-        android:layout_width="wrap_content"
+    <com.ramotion.fluidslider.FluidSlider
+        android:id="@+id/fluid_slider"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/btn_fluid_slider_title"
+        app:bar_color="#297373"
+        app:bar_text_color="@color/black"
+        app:bubble_color="#85FFC7"
+        app:bubble_text_color="@color/black"
+        app:duration="500"
+        app:end_text="Max"
+        app:initial_position=".3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:size="normal"
+        app:start_text="Min" />
 </androidx.constraintlayout.widget.ConstraintLayout>

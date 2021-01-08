@@ -31,6 +31,17 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+
+        binding.btnFluidSlider.setOnClickListener(View.OnClickListener {
+            if (splitInstallManager.getInstalledModules().contains("fluidslider")) {
+                Intent().setClassName(
+                        BuildConfig.APPLICATION_ID,
+                        "ua.com.anyapps.modules.fluidslider.MainActivity"
+                ).also {
+                    startActivity(it)
+                }
+            }
+        })
     }
 
     override fun attachBaseContext(base: Context) {

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">kt_modules</string>
     <string name="title_dynamicfeature">Module Title</string>
+    <string name="title_fluidslider">Fluid Slider</string>
+
+    <string name="btn_fluid_slider_title">Fluid Slider</string>
 </resources>
